@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS,Objectice-C," />
 
 
 
@@ -82,16 +82,16 @@
 
 
 
-<meta name="description" content="部署到github与coding配置12345678# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:  type: git  repo:      github: https://github.com/.../....github.io.git,master      coding: git@git.coding.ne">
+<meta name="description" content="@dynamic与@synthesize的区别@property有两个对应的词，一个是@synthesize，一个是@dynamic，如果@synthesize和@dynamic都没有默认@synthesize。@synthesize的语义是如果没有手动实现setter/getter方法，那么编辑器会自动为你加上这两个方法。@dynamic是告诉编辑器，代码中用@dynamic修饰的属性，其set">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://gohor.github.io/2016/05/10/我的博客/index.html">
+<meta property="og:title" content="dynamic与synthesize区别">
+<meta property="og:url" content="http://gohor.github.io/2016/07/24/dynamic与synthesize区别/index.html">
 <meta property="og:site_name" content="Gohor">
-<meta property="og:description" content="部署到github与coding配置12345678# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:  type: git  repo:      github: https://github.com/.../....github.io.git,master      coding: git@git.coding.ne">
-<meta property="og:updated_time" content="2016-07-21T02:14:41.000Z">
+<meta property="og:description" content="@dynamic与@synthesize的区别@property有两个对应的词，一个是@synthesize，一个是@dynamic，如果@synthesize和@dynamic都没有默认@synthesize。@synthesize的语义是如果没有手动实现setter/getter方法，那么编辑器会自动为你加上这两个方法。@dynamic是告诉编辑器，代码中用@dynamic修饰的属性，其set">
+<meta property="og:updated_time" content="2016-07-25T02:53:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
-<meta name="twitter:description" content="部署到github与coding配置12345678# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:  type: git  repo:      github: https://github.com/.../....github.io.git,master      coding: git@git.coding.ne">
+<meta name="twitter:title" content="dynamic与synthesize区别">
+<meta name="twitter:description" content="@dynamic与@synthesize的区别@property有两个对应的词，一个是@synthesize，一个是@dynamic，如果@synthesize和@dynamic都没有默认@synthesize。@synthesize的语义是如果没有手动实现setter/getter方法，那么编辑器会自动为你加上这两个方法。@dynamic是告诉编辑器，代码中用@dynamic修饰的属性，其set">
 
 
 
@@ -109,7 +109,7 @@
   };
 </script>
 
-  <title> 我的博客 | Gohor </title>
+  <title> dynamic与synthesize区别 | Gohor </title>
   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
       jQuery(function() {          
@@ -280,7 +280,7 @@
             
             
               
-                我的博客
+                dynamic与synthesize区别
               
             
           </h1>
@@ -292,8 +292,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-10T10:02:45+08:00" content="2016-05-10">
-              2016-05-10
+            <time itemprop="dateCreated" datetime="2016-07-24T19:15:14+08:00" content="2016-07-24">
+              2016-07-24
             </time>
           </span>
 
@@ -303,8 +303,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/10/我的博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/我的博客/" itemprop="commentsCount"></span>
+                <a href="/2016/07/24/dynamic与synthesize区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/dynamic与synthesize区别/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -314,7 +314,7 @@
 
           
           
-             <span id="/2016/05/10/我的博客/" class="leancloud_visitors" data-flag-title="我的博客">
+             <span id="/2016/07/24/dynamic与synthesize区别/" class="leancloud_visitors" data-flag-title="dynamic与synthesize区别">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -336,7 +336,8 @@
       
 
       
-        <h2 id="部署到github与coding配置"><a href="#部署到github与coding配置" class="headerlink" title="部署到github与coding配置"></a>部署到github与coding配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo:</span><br><span class="line">      github: https://github.com/.../....github.io.git,master</span><br><span class="line">      coding: git@git.coding.net:.../....git,coding-pages</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+        <h2 id="dynamic与-synthesize的区别"><a href="#dynamic与-synthesize的区别" class="headerlink" title="@dynamic与@synthesize的区别"></a>@dynamic与@synthesize的区别</h2><p>@property有两个对应的词，一个是@synthesize，一个是@dynamic，如果@synthesize和@dynamic都没有默认@synthesize。<br>@synthesize的语义是如果没有手动实现setter/getter方法，那么编辑器会自动为你加上这两个方法。<br>@dynamic是告诉编辑器，代码中用@dynamic修饰的属性，其setter/getter方法会在程序运行的时候或者其他方式动态绑定，以便让编译器通过编译，不自动生成setter/getter方法（对于readonly的属性只需提供getter方法即可）。假如一个属性被声明为@dynamic var，没有提供setter/getter方法，编译的时候没问题，但是当程序运行到instance.var = someVar，由于缺setter方法导致程序崩溃，或者当运行到someVar = var时，由于缺getter方法同样导致崩溃。编译时没问题，运行时才执行相应的方法，这就是所谓的动态绑定。</p>
+
       
     </div>
 
@@ -355,22 +356,26 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
+          
+            <a href="/tags/Objectice-C/" rel="tag">#Objectice-C</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/06/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/07/19/Markdown使用语法规则/" rel="next" title="Markdown使用规则">
+                <i class="fa fa-chevron-left"></i> Markdown使用规则
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/19/Markdown使用语法规则/" rel="prev" title="Markdown使用规则">
-                Markdown使用规则 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -385,10 +390,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/05/10/我的博客/"
-     data-title="我的博客"
+        <div class="ds-share flat" data-thread-key="2016/07/24/dynamic与synthesize区别/"
+     data-title="dynamic与synthesize区别"
      data-content=""
-     data-url="http://gohor.github.io/2016/05/10/我的博客/">
+     data-url="http://gohor.github.io/2016/07/24/dynamic与synthesize区别/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -415,8 +420,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/10/我的博客/"
-           data-title="我的博客" data-url="http://gohor.github.io/2016/05/10/我的博客/">
+      <div class="ds-thread" data-thread-key="2016/07/24/dynamic与synthesize区别/"
+           data-title="dynamic与synthesize区别" data-url="http://gohor.github.io/2016/07/24/dynamic与synthesize区别/">
       </div>
     
   </div>
@@ -518,7 +523,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到github与coding配置"><span class="nav-number">1.</span> <span class="nav-text">部署到github与coding配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#dynamic与-synthesize的区别"><span class="nav-number">1.</span> <span class="nav-text">@dynamic与@synthesize的区别</span></a></li></ol></div>
             
           </div>
         </section>

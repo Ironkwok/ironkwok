@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Gohor
+title: Xiniur
 subtitle: 虽盘桓，志行正也。
 description: 有始有卒者，其惟圣人乎！
 author: GuoJinxing
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://xiniur.github.io
+url: http://xiniur.github.io 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

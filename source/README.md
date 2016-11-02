@@ -1,5 +1,5 @@
 ## Gohor的博客
 
-### gohor.github.io : http://gohor.github.io
+### xiniur.github.io : http://xiniur.github.io
 
 ###	 gohor.coding.me : http://gohor.coding.me

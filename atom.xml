@@ -91,6 +91,32 @@
   </entry>
   
   <entry>
+    <title></title>
+    <link href="http://xiniur.github.io/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://xiniur.github.io/2016/10/18/Xcode8遇到的一些事/</id>
+    <published>2016-10-18T02:17:45.000Z</published>
+    <updated>2016-10-18T02:17:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Xcode8遇到的一些事"><a href="#Xcode8遇到的一些事" class="headerlink" title="Xcode8遇到的一些事"></a>Xcode8遇到的一些事</h1><h3 id="普通账号真机调试"><a href="#普通账号真机调试" class="headerlink" title="普通账号真机调试"></a>普通账号真机调试</h3><p>普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。</p>
+<h3 id="Xcode无脑日志"><a href="#Xcode无脑日志" class="headerlink" title="Xcode无脑日志"></a>Xcode无脑日志</h3><p>Xcode8里边 Edit Scheme-&gt; Run -&gt; Arguments, 在Environment Variables里边添加<br>OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。<br>如果写了之后还是打印log，请重新勾选对勾，就可以解决了。</p>
+<h3 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h3><p>这个是因为苹果解决xcode ghost，把插件屏蔽了。<br>解决方法<br>打开终端，命令运行：</p>
+<blockquote>
+<p>$ sudo /usr/libexec/xpccachectl</p>
+</blockquote>
+<p>然后必须重启电脑后生效。</p>
+<p>注意：Xcode8内置了开启注释的功能 Editor-&gt;Structure-&gt;Add Documentation。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Xcode8遇到的一些事&quot;&gt;&lt;a href=&quot;#Xcode8遇到的一些事&quot; class=&quot;headerlink&quot; title=&quot;Xcode8遇到的一些事&quot;&gt;&lt;/a&gt;Xcode8遇到的一些事&lt;/h1&gt;&lt;h3 id=&quot;普通账号真机调试&quot;&gt;&lt;a href=&quot;#普通账号真
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>dynamic与synthesize区别</title>
     <link href="http://xiniur.github.io/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/"/>
     <id>http://xiniur.github.io/2016/07/24/dynamic与synthesize区别/</id>

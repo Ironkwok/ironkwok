@@ -60,11 +60,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>Xcode8遇到的一些事</title>
     <link href="http://xiniur.github.io/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
     <id>http://xiniur.github.io/2016/10/18/Xcode8遇到的一些事/</id>
     <published>2016-10-18T02:17:45.000Z</published>
-    <updated>2016-10-18T02:17:45.000Z</updated>
+    <updated>2016-11-03T08:34:18.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Xcode8遇到的一些事"><a href="#Xcode8遇到的一些事" class="headerlink" title="Xcode8遇到的一些事"></a>Xcode8遇到的一些事</h1><h3 id="普通账号真机调试"><a href="#普通账号真机调试" class="headerlink" title="普通账号真机调试"></a>普通账号真机调试</h3><p>普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。</p>
 <h3 id="Xcode无脑日志"><a href="#Xcode无脑日志" class="headerlink" title="Xcode无脑日志"></a>Xcode无脑日志</h3><p>Xcode8里边 Edit Scheme-&gt; Run -&gt; Arguments, 在Environment Variables里边添加<br>OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。<br>如果写了之后还是打印log，请重新勾选对勾，就可以解决了。</p>

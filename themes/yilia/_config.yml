@@ -1,15 +1,14 @@
 # Header
+
 menu:
   主页: /
-  所有文章: /archives
-  #随笔: /tags/随笔
+  相册: /photos
 
 # SubNav
 subnav:
-  github: "https://www.github.com/gohor"
-  weibo: "http://www.weibo.com"
-  #rss: "#"
-  zhihu: "http://www.zhihu.com"
+  github: "https://github.com/litten"
+  weibo: "http://weibo.com/litten225"
+  rss: /atom.xml
   #douban: "#"
   #mail: "#"
   #facebook: "#"
@@ -17,43 +16,50 @@ subnav:
   #twitter: "#"
   #linkedin: "#"
 
-#rss: /atom.xml
+rss: /atom.xml
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: 
 
 # Content
 excerpt_link: more
 fancybox: true
-#mathjax: true
+mathjax: false
 
 # 是否开启动画效果
-animate: false
+animate: true
 
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: /assets/img/favicon.ico
 
 #你的头像url
-avatar: "uploads/avatar.jpg"
+avatar: /uploads/avatar.jpg
+
 #是否开启分享
 share_jia: true
 share_addthis: false
+
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-#duoshuo: true
-duoshuo: gohor
-#是否开启云标签
-tagcloud: true
+duoshuo: "gohor"
 
-#是否开启友情链接
-#不开启——
-friends: false
-#开启——
-#friends:
+# 如不需要，将该项置为false
+# 比如
+#smart_menu:
+#  friends: false
 
-#是否开启“关于我”。
-#不开启——
-#aboutme: false
-#开启——
+smart_menu:
+  innerArchive: '所有文章'
+  tagcloud: '标签'
+  friends: false
+  aboutme: '关于我'
+
+friends:
+
 aboutme: 虽盘桓，志行正也。

@@ -71,7 +71,7 @@ deploy:
   type: git
   repo: 
       github: https://github.com/xiniur/xiniur.github.io.git,master
-      # coding: git@git.coding.net:gohor/gohor.git,coding-pages
+      coding: https://git.coding.net/gohor/gohor.git,coding-pages
   branch: master
 
 #头像设置
@@ -87,7 +87,7 @@ duoshuo_info:
   admin_nickname: 博主
 
 #多说
-duoshuo_shortname: xiniur
+duoshuo_shortname: gohor
 
 #多说分享
 duoshuo_share: true
@@ -105,24 +105,6 @@ leancloud_visitors:
   app_id: 62Axc60HxhcCtRjwOkL5CRqp-gzGzoHsz
   app_key: fvickSfydbeFDg79mLEOiTYx
 
-# Show PV/UV of the website/page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
-busuanzi_count:
-  # count values only if the other configs are false
-  enable: false
-  # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
-  # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
-  # custom pv span for one page only
-  page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
-
 #JiaThis
 #jiathis: true
 
@@ -132,7 +114,9 @@ baidu_analytics: 63b9f7b4c70cd387bcea296394d789fa
 #Local Search
 search:
   path: search.xml
-  field: all
+  field: post
+  format: html
+  limit: 10000
 
 #RSS
 feed:

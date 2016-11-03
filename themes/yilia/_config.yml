@@ -2,15 +2,15 @@
 
 menu:
   主页: /
-  相册: /photos
+  标签: /tags
 
 # SubNav
 subnav:
-  github: "https://github.com/litten"
-  weibo: "http://weibo.com/litten225"
+  github: "https://github.com/xiniur"
+  weibo: "http://weibo.com/1614763492"
   rss: /atom.xml
   #douban: "#"
-  #mail: "#"
+  mail: "274494712@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"

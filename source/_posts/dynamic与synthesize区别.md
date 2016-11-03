@@ -4,6 +4,7 @@ date: 2016-07-24 19:15:14
 tags: 
 	- iOS 
 	- Objective-C
+	- Xcode
 ---
 
 ## @dynamic与@synthesize的区别

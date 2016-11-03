@@ -1,10 +1,15 @@
 ---
 title: Xcode8遇到的一些事
+date: 2016-10-18 10:10:10
+tags: 
+- iOS 
+- Objective-C
+- Xcode
 ---
 # Xcode8遇到的一些事
 ### 普通账号真机调试	
 普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。
-### Xcode无脑日志 
+### Xcod杂乱无章日志 
 Xcode8里边 Edit Scheme-> Run -> Arguments, 在Environment Variables里边添加
 OS_ACTIVITY_MODE，value值设置为disable...........添加后点击Close。
 如果写了之后还是打印log，请重新勾选对勾，就可以解决了。

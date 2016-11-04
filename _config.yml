@@ -76,7 +76,7 @@ deploy:
   branch: master
 
 #头像设置
-avatar: /uploads/avatar.jpg
+avatar: /uploads/avatar.png
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!

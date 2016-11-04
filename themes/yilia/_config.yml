@@ -2,7 +2,7 @@
 
 menu:
   主页: /
-  标签: /tags
+  归档: /archives
 
 # SubNav
 subnav:
@@ -10,7 +10,7 @@ subnav:
   weibo: "http://weibo.com/1614763492"
   rss: /atom.xml
   #douban: "#"
-  mail: "274494712@qq.com"
+  #mail: 
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -36,7 +36,7 @@ open_in_new: true
 
 # Miscellaneous
 google_analytics: ''
-favicon: /assets/img/favicon.ico
+favicon: 
 
 #你的头像url
 avatar: /uploads/avatar.jpg

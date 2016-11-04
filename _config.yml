@@ -9,10 +9,11 @@ description: 有始有卒者，其惟圣人乎！
 author: GuoJinxing
 language: zh-Hans
 timezone:
+keywords: "iOS,Xcode,Objective-C,Swift,编程，程序员，程序猿，开发，代码，Developer，Coder，IT"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://xiniur.github.io 
+url: //xiniur.github.io 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -57,7 +58,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 3
+per_page: 6
 pagination_dir: page
 
 # Extensions

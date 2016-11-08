@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[Xcode8遇到的一些事]]></title>
-      <url>//xiniur.github.io/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/</url>
+      <url>//xiniur.tk/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/</url>
       <content type="html"><![CDATA[<h1 id="Xcode8遇到的一些事"><a href="#Xcode8遇到的一些事" class="headerlink" title="Xcode8遇到的一些事"></a>Xcode8遇到的一些事</h1><h3 id="普通账号真机调试"><a href="#普通账号真机调试" class="headerlink" title="普通账号真机调试"></a>普通账号真机调试</h3><p>普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。</p>
 <h3 id="Xcode杂乱无章日志"><a href="#Xcode杂乱无章日志" class="headerlink" title="Xcode杂乱无章日志"></a>Xcode杂乱无章日志</h3><p>Xcode8里边 Edit Scheme-&gt; Run -&gt; Arguments, 在Environment Variables里边添加<br>OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。<br>如果写了之后还是打印log，请重新勾选对勾，就可以解决了。</p>
 <h3 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h3><p>这个是因为苹果解决xcode ghost，把插件屏蔽了。<br>解决方法<br>打开终端，命令运行：</p>
@@ -17,14 +17,14 @@
     
     <entry>
       <title><![CDATA[dynamic与synthesize区别]]></title>
-      <url>//xiniur.github.io/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/</url>
+      <url>//xiniur.tk/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/</url>
       <content type="html"><![CDATA[<h2 id="dynamic与-synthesize的区别"><a href="#dynamic与-synthesize的区别" class="headerlink" title="@dynamic与@synthesize的区别"></a>@dynamic与@synthesize的区别</h2><p>@property有两个对应的词，一个是@synthesize，一个是@dynamic，如果@synthesize和@dynamic都没有默认@synthesize。<br>@synthesize的语义是如果没有手动实现setter/getter方法，那么编辑器会自动为你加上这两个方法。<br>@dynamic是告诉编辑器，代码中用@dynamic修饰的属性，其setter/getter方法会在程序运行的时候或者其他方式动态绑定，以便让编译器通过编译，不自动生成setter/getter方法（对于readonly的属性只需提供getter方法即可）。假如一个属性被声明为@dynamic var，没有提供setter/getter方法，编译的时候没问题，但是当程序运行到instance.var = someVar，由于缺setter方法导致程序崩溃，或者当运行到someVar = var时，由于缺getter方法同样导致崩溃。编译时没问题，运行时才执行相应的方法，这就是所谓的动态绑定。</p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Markdown使用规则]]></title>
-      <url>//xiniur.github.io/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</url>
+      <url>//xiniur.tk/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</url>
       <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>  是一种轻量级标记语言，它的目标是实现易读易写。</p>
 <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>  如果一段文字被定义为标题，只要在这段文字前加#号即可。总共六级标题，使用几级标题在前面加多少个#号。（# 一级标题 ## 二级标题 ### 三级标题）。</p>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>  列表有有序列表与无序列表的区别，在Markdown下，列表的显示只需要在文字前加上-或*即可变为无序列表，有序列表则直接在文字前加（1. 2. 3. ）符号要和文字之间加一个字符的空格。<br><a id="more"></a></p>
@@ -36,7 +36,7 @@
     
     <entry>
       <title><![CDATA[我的博客]]></title>
-      <url>//xiniur.github.io/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+      <url>//xiniur.tk/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h2 id="部署到github与coding配置"><a href="#部署到github与coding配置" class="headerlink" title="部署到github与coding配置"></a>部署到github与coding配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo:</div><div class="line">      github: https://github.com/.../....github.io.git,master</div><div class="line">      coding: git@git.coding.net:.../....git,coding-pages</div><div class="line">  branch: master</div></pre></td></tr></table></figure>]]></content>
     </entry>
     

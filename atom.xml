@@ -4,9 +4,9 @@
   <subtitle>虽盘桓，志行正也!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="//xiniur.github.io/"/>
+  <link href="//xiniur.tk/"/>
   <updated>2016-11-04T02:23:28.000Z</updated>
-  <id>//xiniur.github.io/</id>
+  <id>//xiniur.tk/</id>
   
   <author>
     <name>Xiniur</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Xcode8遇到的一些事</title>
-    <link href="//xiniur.github.io/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
-    <id>//xiniur.github.io/2016/10/18/Xcode8遇到的一些事/</id>
+    <link href="//xiniur.tk/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
+    <id>//xiniur.tk/2016/10/18/Xcode8遇到的一些事/</id>
     <published>2016-10-18T02:10:10.000Z</published>
     <updated>2016-11-04T02:23:28.000Z</updated>
     
@@ -37,14 +37,14 @@
     </summary>
     
     
-      <category term="Xcode" scheme="//xiniur.github.io/tags/Xcode/"/>
+      <category term="Xcode" scheme="//xiniur.tk/tags/Xcode/"/>
     
   </entry>
   
   <entry>
     <title>dynamic与synthesize区别</title>
-    <link href="//xiniur.github.io/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/"/>
-    <id>//xiniur.github.io/2016/07/24/dynamic与synthesize区别/</id>
+    <link href="//xiniur.tk/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/"/>
+    <id>//xiniur.tk/2016/07/24/dynamic与synthesize区别/</id>
     <published>2016-07-24T11:15:14.000Z</published>
     <updated>2016-11-04T01:52:34.000Z</updated>
     
@@ -58,16 +58,16 @@
     </summary>
     
     
-      <category term="iOS" scheme="//xiniur.github.io/tags/iOS/"/>
+      <category term="iOS" scheme="//xiniur.tk/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="//xiniur.github.io/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="//xiniur.tk/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>Markdown使用规则</title>
-    <link href="//xiniur.github.io/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/"/>
-    <id>//xiniur.github.io/2016/07/19/Markdown使用语法规则/</id>
+    <link href="//xiniur.tk/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/"/>
+    <id>//xiniur.tk/2016/07/19/Markdown使用语法规则/</id>
     <published>2016-07-19T09:34:14.000Z</published>
     <updated>2016-11-04T01:32:11.000Z</updated>
     
@@ -88,14 +88,14 @@
     </summary>
     
     
-      <category term="Markdown" scheme="//xiniur.github.io/tags/Markdown/"/>
+      <category term="Markdown" scheme="//xiniur.tk/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>我的博客</title>
-    <link href="//xiniur.github.io/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>//xiniur.github.io/2016/05/10/我的博客/</id>
+    <link href="//xiniur.tk/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>//xiniur.tk/2016/05/10/我的博客/</id>
     <published>2016-05-10T02:02:30.000Z</published>
     <updated>2016-11-04T01:32:11.000Z</updated>
     
@@ -108,7 +108,7 @@
     </summary>
     
     
-      <category term="hexo" scheme="//xiniur.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="//xiniur.tk/tags/hexo/"/>
     
   </entry>
   

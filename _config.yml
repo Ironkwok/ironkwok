@@ -13,7 +13,7 @@ keywords: "iOS,Xcode,Objective-C,Swift,编程，程序员，程序猿，开发�
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: //xiniur.github.io 
+url: //xiniur.tk 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

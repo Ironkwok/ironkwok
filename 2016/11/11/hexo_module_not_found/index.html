@@ -6,18 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//xiniur.tk">
-  <title>tags | Xiniur的博客</title>
+  <title>Cannot find module &#39;./build/Debug/DTraceProviderBindings&#39; | Xiniur的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="有始有卒者，其惟圣人乎！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="//xiniur.tk/tags/index.html">
+  <meta name="description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
+{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cannot find module './build/Debug/DTraceProviderBindings'">
+<meta property="og:url" content="//xiniur.tk/2016/11/11/hexo_module_not_found/index.html">
 <meta property="og:site_name" content="Xiniur的博客">
-<meta property="og:description" content="有始有卒者，其惟圣人乎！">
-<meta property="og:updated_time" content="2016-11-03T02:53:15.000Z">
+<meta property="og:description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
+{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._">
+<meta property="og:updated_time" content="2016-11-11T09:35:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="有始有卒者，其惟圣人乎！">
+<meta name="twitter:title" content="Cannot find module './build/Debug/DTraceProviderBindings'">
+<meta name="twitter:description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
+{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._">
   
     <link rel="alternative" href="/atom.xml" title="Xiniur的博客" type="application/atom+xml">
   
@@ -136,7 +145,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-hexo_module_not_found" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -146,7 +155,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      Cannot find module &#39;./build/Debug/DTraceProviderBindings&#39;
     </h1>
   
 
@@ -154,15 +163,127 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="最近使用hexo的时候总是遇到这样的错误："><a href="#最近使用hexo的时候总是遇到这样的错误：" class="headerlink" title="最近使用hexo的时候总是遇到这样的错误："></a>最近使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
+{ Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
+{ Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
+{ Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
+hexo: 3.2.2
+hexo-cli: 1.0.2
+os: Darwin 16.1.0 darwin x64
+http_parser: 2.7.0
+node: 7.0.0
+v8: 5.4.500.36
+uv: 1.9.1
+zlib: 1.2.8
+ares: 1.10.1-DEV
+icu: 57.1
+modules: 51
+openssl: 1.0.2j
+</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><p>网上无数答案，最靠谱的办法：</p>
+<pre><code>npm install hexo --no-optional
+</code></pre><p>然而，执行了之后没有效果，再找：</p>
+<pre><code>npm uninstall hexo
+npm install hexo --no-optional
+</code></pre><p>并没有什么用，坚持不放弃，重装hexo-cli：</p>
+<pre><code>npm uninstall -g hexo-cli
+npm install -g hexo-cli
+</code></pre><p>卸载时出现以下结果：</p>
+<pre><code>npm ERR! Darwin 16.1.0
+npm ERR! argv &quot;/usr/local/bin/node&quot; &quot;/usr/local/bin/npm&quot; &quot;uninstall&quot; &quot;-g&quot; &quot;hexo-cli&quot;
+npm ERR! node v7.0.0
+npm ERR! npm  v3.10.8
+npm ERR! path /usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+
+npm ERR! Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos;
+npm ERR!  { Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos;
+npm ERR!   errno: -13,
+npm ERR!   code: &apos;EACCES&apos;,
+npm ERR!   syscall: &apos;access&apos;,
+npm ERR!   path: &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos; }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+</code></pre><p>使用sudo,输入password，完美执行：</p>
+<pre><code>sudo npm uninstall -g hexo-cli
+sudo npm install -g hexo-cli
+</code></pre><p>一试之下，顿觉开朗,不再报错，完美解决问题：</p>
+<pre><code>$ hexo --version
+hexo: 3.2.2
+hexo-cli: 1.0.2
+os: Darwin 16.1.0 darwin x64
+http_parser: 2.7.0
+node: 7.0.0
+v8: 5.4.500.36
+uv: 1.9.1
+zlib: 1.2.8
+ares: 1.10.1-DEV
+icu: 57.1
+modules: 51
+openssl: 1.0.2j
+</code></pre>
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2016-05-10T02:08:52.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-05-10</time>
+      <a href="/2016/11/11/hexo_module_not_found/" class="archive-article-date">
+  	<time datetime="2016-11-11T08:42:49.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-11</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -171,6 +292,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/11/11-11/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">11_11</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -199,7 +330,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="tags" data-url="//xiniur.tk/tags/index.html"></div>
+	<div class="ds-thread" data-thread-key="hexo_module_not_found" data-title="Cannot find module &#39;./build/Debug/DTraceProviderBindings&#39;" data-url="//xiniur.tk/2016/11/11/hexo_module_not_found/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -240,7 +371,7 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

@@ -96,10 +96,10 @@ npm ERR!   syscall: &apos;access&apos;,
 npm ERR!   path: &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos; }
 npm ERR! 
 npm ERR! Please try running this command again as root/Administrator.
-</code></pre><p>使用sudo,输入password，完美执行：</p>
+</code></pre><p>使用sudo，输入password，完美执行：</p>
 <pre><code>sudo npm uninstall -g hexo-cli
 sudo npm install -g hexo-cli
-</code></pre><p>一试之下，顿觉开朗,不再报错，完美解决问题：</p>
+</code></pre><p>一试之下，顿觉开朗，不再报错，完美解决问题：</p>
 <pre><code>$ hexo --version
 hexo: 3.2.2
 hexo-cli: 1.0.2

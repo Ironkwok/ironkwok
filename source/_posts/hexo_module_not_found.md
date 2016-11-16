@@ -79,19 +79,19 @@ openssl: 1.0.2j
 网上无数答案，最靠谱的办法：
 
 ``` 
-npm install hexo --no-optional
+$ npm install hexo --no-optional
 ``` 
 然而，执行了之后没有效果，再找：
 
 ``` 
-npm uninstall hexo
-npm install hexo --no-optional
+$ npm uninstall hexo
+$ npm install hexo --no-optional
 ``` 
 并没有什么用，坚持不放弃，重装hexo-cli：
 
 ``` 
-npm uninstall -g hexo-cli
-npm install -g hexo-cli
+$ npm uninstall -g hexo-cli
+$ npm install -g hexo-cli
 ``` 
 卸载时出现以下结果：
 
@@ -118,8 +118,8 @@ npm ERR! Please try running this command again as root/Administrator.
 使用sudo，输入password，完美执行：
 
 ``` 
-sudo npm uninstall -g hexo-cli
-sudo npm install -g hexo-cli
+$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
 ``` 
 一试之下，顿觉开朗，不再报错，完美解决问题：
 

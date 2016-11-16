@@ -72,13 +72,13 @@ modules: 51
 openssl: 1.0.2j
 </code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><a id="more"></a>
 <p>网上无数答案，最靠谱的办法：</p>
-<pre><code>npm install hexo --no-optional
+<pre><code>$ npm install hexo --no-optional
 </code></pre><p>然而，执行了之后没有效果，再找：</p>
-<pre><code>npm uninstall hexo
-npm install hexo --no-optional
+<pre><code>$ npm uninstall hexo
+$ npm install hexo --no-optional
 </code></pre><p>并没有什么用，坚持不放弃，重装hexo-cli：</p>
-<pre><code>npm uninstall -g hexo-cli
-npm install -g hexo-cli
+<pre><code>$ npm uninstall -g hexo-cli
+$ npm install -g hexo-cli
 </code></pre><p>卸载时出现以下结果：</p>
 <pre><code>npm ERR! Darwin 16.1.0
 npm ERR! argv &quot;/usr/local/bin/node&quot; &quot;/usr/local/bin/npm&quot; &quot;uninstall&quot; &quot;-g&quot; &quot;hexo-cli&quot;
@@ -98,8 +98,8 @@ npm ERR!   path: &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-re
 npm ERR! 
 npm ERR! Please try running this command again as root/Administrator.
 </code></pre><p>使用sudo，输入password，完美执行：</p>
-<pre><code>sudo npm uninstall -g hexo-cli
-sudo npm install -g hexo-cli
+<pre><code>$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
 </code></pre><p>一试之下，顿觉开朗，不再报错，完美解决问题：</p>
 <pre><code>$ hexo --version
 hexo: 3.2.2

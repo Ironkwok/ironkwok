@@ -90,6 +90,9 @@ duoshuo_info:
 #多说
 duoshuo_shortname: gohor
 
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+duoshuo: "gohor"
+
 #多说分享
 duoshuo_share: true
 

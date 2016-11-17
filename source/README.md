@@ -1,3 +1,3 @@
 ## Xiniur的博客
-#### [Xiniur的博客](http://xiniur.tk)
-#### [备用](http://gohor.ml)
+#### [Kinduc的博客](http://kinduc.ga)
+#### [备用博客地址](http://gohor.coding.me)

@@ -8,25 +8,19 @@
   <link rel="dns-prefetch" href="//xiniur.tk">
   <title>Cannot find module DTraceProviderBindings | Xiniur的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
-{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._">
+  <meta name="description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cannot find module DTraceProviderBindings">
 <meta property="og:url" content="//xiniur.tk/2016/11/11/hexo_module_not_found/index.html">
 <meta property="og:site_name" content="Xiniur的博客">
-<meta property="og:description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
-{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._">
-<meta property="og:updated_time" content="2016-11-16T02:10:23.000Z">
+<meta property="og:description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli">
+<meta property="og:updated_time" content="2016-11-18T08:50:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cannot find module DTraceProviderBindings">
-<meta name="twitter:description" content="最近使用hexo的时候总是遇到这样的错误：$ hexo --version
-{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._">
+<meta name="twitter:description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli">
   
     <link rel="alternative" href="/atom.xml" title="Xiniur的博客" type="application/atom+xml">
   
@@ -160,9 +154,28 @@
 
       </header>
     
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/11/hexo_module_not_found/" class="archive-article-date">
+  	<time datetime="2016-11-11T08:42:49.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-11</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="最近使用hexo的时候总是遇到这样的错误："><a href="#最近使用hexo的时候总是遇到这样的错误：" class="headerlink" title="最近使用hexo的时候总是遇到这样的错误："></a>最近使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
+        <h3 id="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："><a href="#针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：" class="headerlink" title="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："></a>针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：</h3><pre><code>$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
+</code></pre><a id="more"></a> 
+<h3 id="使用hexo的时候总是遇到这样的错误："><a href="#使用hexo的时候总是遇到这样的错误：" class="headerlink" title="使用hexo的时候总是遇到这样的错误："></a>使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
 { Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;
     at Function.Module._resolveFilename (module.js:472:15)
     at Function.Module._load (module.js:420:25)
@@ -226,8 +239,7 @@ ares: 1.10.1-DEV
 icu: 57.1
 modules: 51
 openssl: 1.0.2j
-</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><a id="more"></a>
-<p>网上无数答案，最靠谱的办法：</p>
+</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><p>网上无数答案，最靠谱的办法：</p>
 <pre><code>$ npm install hexo --no-optional
 </code></pre><p>然而，执行了之后没有效果，再找：</p>
 <pre><code>$ npm uninstall hexo
@@ -273,22 +285,6 @@ openssl: 1.0.2j
 </code></pre>
       
     </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/11/hexo_module_not_found/" class="archive-article-date">
-  	<time datetime="2016-11-11T08:42:49.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-11</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
 </article>
 
   

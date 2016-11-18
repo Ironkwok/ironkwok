@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//xiniur.tk/"/>
-  <updated>2016-11-16T02:10:23.000Z</updated>
+  <updated>2016-11-18T08:50:41.000Z</updated>
   <id>//xiniur.tk/</id>
   
   <author>
@@ -20,9 +20,12 @@
     <link href="//xiniur.tk/2016/11/11/hexo_module_not_found/"/>
     <id>//xiniur.tk/2016/11/11/hexo_module_not_found/</id>
     <published>2016-11-11T08:42:49.000Z</published>
-    <updated>2016-11-16T02:10:23.000Z</updated>
+    <updated>2016-11-18T08:50:41.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="最近使用hexo的时候总是遇到这样的错误："><a href="#最近使用hexo的时候总是遇到这样的错误：" class="headerlink" title="最近使用hexo的时候总是遇到这样的错误："></a>最近使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
+    <content type="html"><![CDATA[<h3 id="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："><a href="#针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：" class="headerlink" title="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："></a>针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：</h3><pre><code>$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
+</code></pre><a id="more"></a> 
+<h3 id="使用hexo的时候总是遇到这样的错误："><a href="#使用hexo的时候总是遇到这样的错误：" class="headerlink" title="使用hexo的时候总是遇到这样的错误："></a>使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
 { Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;
     at Function.Module._resolveFilename (module.js:472:15)
     at Function.Module._load (module.js:420:25)
@@ -86,8 +89,7 @@ ares: 1.10.1-DEV
 icu: 57.1
 modules: 51
 openssl: 1.0.2j
-</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><a id="more"></a>
-<p>网上无数答案，最靠谱的办法：</p>
+</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><p>网上无数答案，最靠谱的办法：</p>
 <pre><code>$ npm install hexo --no-optional
 </code></pre><p>然而，执行了之后没有效果，再找：</p>
 <pre><code>$ npm uninstall hexo
@@ -134,71 +136,9 @@ openssl: 1.0.2j
     
     <summary type="html">
     
-      &lt;h3 id=&quot;最近使用hexo的时候总是遇到这样的错误：&quot;&gt;&lt;a href=&quot;#最近使用hexo的时候总是遇到这样的错误：&quot; class=&quot;headerlink&quot; title=&quot;最近使用hexo的时候总是遇到这样的错误：&quot;&gt;&lt;/a&gt;最近使用hexo的时候总是遇到这样的错误：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;$ hexo --version
-{ Error: Cannot find module &amp;apos;./build/Release/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &amp;apos;MODULE_NOT_FOUND&amp;apos; }
-{ Error: Cannot find module &amp;apos;./build/default/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &amp;apos;MODULE_NOT_FOUND&amp;apos; }
-{ Error: Cannot find module &amp;apos;./build/Debug/DTraceProviderBindings&amp;apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&amp;lt;anonymous&amp;gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &amp;apos;MODULE_NOT_FOUND&amp;apos; }
-hexo: 3.2.2
-hexo-cli: 1.0.2
-os: Darwin 16.1.0 darwin x64
-http_parser: 2.7.0
-node: 7.0.0
-v8: 5.4.500.36
-uv: 1.9.1
-zlib: 1.2.8
-ares: 1.10.1-DEV
-icu: 57.1
-modules: 51
-openssl: 1.0.2j
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;解决办法如下：&quot;&gt;&lt;a href=&quot;#解决办法如下：&quot; class=&quot;headerlink&quot; title=&quot;解决办法如下：&quot;&gt;&lt;/a&gt;解决办法如下：&lt;/h3&gt;
+      &lt;h3 id=&quot;针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：&quot;&gt;&lt;a href=&quot;#针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：&quot; class=&quot;headerlink&quot; title=&quot;针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：&quot;&gt;&lt;/a&gt;针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -226,10 +166,10 @@ openssl: 1.0.2j
     <link href="//xiniur.tk/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
     <id>//xiniur.tk/2016/10/18/Xcode8遇到的一些事/</id>
     <published>2016-10-18T02:10:10.000Z</published>
-    <updated>2016-11-11T07:41:41.000Z</updated>
+    <updated>2016-11-18T08:49:59.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Xcode8遇到的一些事"><a href="#Xcode8遇到的一些事" class="headerlink" title="Xcode8遇到的一些事"></a>Xcode8遇到的一些事</h1><h3 id="普通账号真机调试"><a href="#普通账号真机调试" class="headerlink" title="普通账号真机调试"></a>普通账号真机调试</h3><p>普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。</p>
-<h3 id="Xcode杂乱无章日志"><a href="#Xcode杂乱无章日志" class="headerlink" title="Xcode杂乱无章日志"></a>Xcode杂乱无章日志</h3><p>Xcode8里边 Edit Scheme-&gt; Run -&gt; Arguments, 在Environment Variables里边添加<br>OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。<br>如果写了之后还是打印log，请重新勾选对勾，就可以解决了。</p>
+    <content type="html"><![CDATA[<h3 id="普通账号真机调试"><a href="#普通账号真机调试" class="headerlink" title="普通账号真机调试"></a>普通账号真机调试</h3><p>普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。</p>
+<h3 id="Xcode杂乱无章日志"><a href="#Xcode杂乱无章日志" class="headerlink" title="Xcode杂乱无章日志"></a>Xcode杂乱无章日志</h3><p>Xcode8里边 Edit Scheme-&gt; Run -&gt; Arguments, 在Environment Variables里边添加<br>OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。<br>如果写了之后还是打印log，请重新勾选对勾，就可以解决了。<br><a id="more"></a> </p>
 <h3 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h3><p>这个是因为苹果解决xcode ghost，把插件屏蔽了。<br>解决方法<br>打开终端，命令运行：</p>
 <pre><code>$ sudo /usr/libexec/xpccachectl
 </code></pre><p>然后必须重启电脑后生效。</p>
@@ -283,7 +223,8 @@ openssl: 1.0.2j
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Xcode8遇到的一些事&quot;&gt;&lt;a href=&quot;#Xcode8遇到的一些事&quot; class=&quot;headerlink&quot; title=&quot;Xcode8遇到的一些事&quot;&gt;&lt;/a&gt;Xcode8遇到的一些事&lt;/h1&gt;&lt;h3 id=&quot;普通账号真机调试&quot;&gt;&lt;a href=&quot;#普通账号真
+      &lt;h3 id=&quot;普通账号真机调试&quot;&gt;&lt;a href=&quot;#普通账号真机调试&quot; class=&quot;headerlink&quot; title=&quot;普通账号真机调试&quot;&gt;&lt;/a&gt;普通账号真机调试&lt;/h3&gt;&lt;p&gt;普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。&lt;/p&gt;
+&lt;h3 id=&quot;Xcode杂乱无章日志&quot;&gt;&lt;a href=&quot;#Xcode杂乱无章日志&quot; class=&quot;headerlink&quot; title=&quot;Xcode杂乱无章日志&quot;&gt;&lt;/a&gt;Xcode杂乱无章日志&lt;/h3&gt;&lt;p&gt;Xcode8里边 Edit Scheme-&amp;gt; Run -&amp;gt; Arguments, 在Environment Variables里边添加&lt;br&gt;OS_ACTIVITY_MODE，value值设置为disable………..添加后点击Close。&lt;br&gt;如果写了之后还是打印log，请重新勾选对勾，就可以解决了。&lt;br&gt;
     
     </summary>
     
@@ -320,11 +261,11 @@ openssl: 1.0.2j
     <link href="//xiniur.tk/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/"/>
     <id>//xiniur.tk/2016/07/19/Markdown使用语法规则/</id>
     <published>2016-07-19T09:34:14.000Z</published>
-    <updated>2016-11-04T01:32:11.000Z</updated>
+    <updated>2016-11-18T08:49:37.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>  是一种轻量级标记语言，它的目标是实现易读易写。</p>
-<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>  如果一段文字被定义为标题，只要在这段文字前加#号即可。总共六级标题，使用几级标题在前面加多少个#号。（# 一级标题 ## 二级标题 ### 三级标题）。</p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>  列表有有序列表与无序列表的区别，在Markdown下，列表的显示只需要在文字前加上-或*即可变为无序列表，有序列表则直接在文字前加（1. 2. 3. ）符号要和文字之间加一个字符的空格。<br><a id="more"></a></p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>  如果一段文字被定义为标题，只要在这段文字前加#号即可。总共六级标题，使用几级标题在前面加多少个#号。（# 一级标题 ## 二级标题 ### 三级标题）。<br><a id="more"></a> </p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>  列表有有序列表与无序列表的区别，在Markdown下，列表的显示只需要在文字前加上-或*即可变为无序列表，有序列表则直接在文字前加（1. 2. 3. ）符号要和文字之间加一个字符的空格。</p>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>  如果需要引用一小段别处的内容只需要在文本前加入&gt;（符号与内容之间有空格）这种尖括号。</p>
 <h3 id="显示阅读全文"><a href="#显示阅读全文" class="headerlink" title="显示阅读全文"></a>显示阅读全文</h3><p>在需要显示的地方添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure></p>
 <p>那么就会在文中添加more的地方显示阅读全文。</p>
@@ -333,8 +274,7 @@ openssl: 1.0.2j
     <summary type="html">
     
       &lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;  是一种轻量级标记语言，它的目标是实现易读易写。&lt;/p&gt;
-&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;p&gt;  如果一段文字被定义为标题，只要在这段文字前加#号即可。总共六级标题，使用几级标题在前面加多少个#号。（# 一级标题 ## 二级标题 ### 三级标题）。&lt;/p&gt;
-&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h3&gt;&lt;p&gt;  列表有有序列表与无序列表的区别，在Markdown下，列表的显示只需要在文字前加上-或*即可变为无序列表，有序列表则直接在文字前加（1. 2. 3. ）符号要和文字之间加一个字符的空格。&lt;br&gt;
+&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;p&gt;  如果一段文字被定义为标题，只要在这段文字前加#号即可。总共六级标题，使用几级标题在前面加多少个#号。（# 一级标题 ## 二级标题 ### 三级标题）。&lt;br&gt;
     
     </summary>
     

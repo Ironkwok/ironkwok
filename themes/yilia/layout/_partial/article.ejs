@@ -8,16 +8,6 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <p class="article-more-link">
-          <a class="article-more-a" <% if (!theme.excerpt_link){ %>class="hidden"<% } %> href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
-        </p>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </div>
     <div class="article-info article-info-index">
       <%if(post.top){%>
         <div class="article-pop-out tagcloud">
@@ -30,6 +20,16 @@
       <div class="clearfix"></div>
     </div>
   </div>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <p class="article-more-link">
+          <a class="article-more-a" <% if (!theme.excerpt_link){ %>class="hidden"<% } %> href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
+        </p>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
 </article>
 <% if (!index){ %>
   <%- partial('post/nav') %>

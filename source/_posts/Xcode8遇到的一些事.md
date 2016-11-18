@@ -4,8 +4,6 @@ date: 2016-10-18 10:10:10
 tags: 
 - Xcode
 ---
-# Xcode8遇到的一些事
-
 ### 普通账号真机调试	
 普通开发者账号有了限制，每七天可以创建10个APP IDs，可以使用同一个Bundle Identifier来规避这个问题。
 
@@ -13,7 +11,7 @@ tags:
 Xcode8里边 Edit Scheme-> Run -> Arguments, 在Environment Variables里边添加
 OS_ACTIVITY_MODE，value值设置为disable...........添加后点击Close。
 如果写了之后还是打印log，请重新勾选对勾，就可以解决了。
-
+<!--more--> 
 ### 代码注释
 这个是因为苹果解决xcode ghost，把插件屏蔽了。
 解决方法

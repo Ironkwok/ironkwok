@@ -6,7 +6,14 @@ date: 2016-11-11 16:42:49
 tags: 
 	- hexo
 ---
-### 最近使用hexo的时候总是遇到这样的错误：
+### 针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：
+
+``` 
+$ sudo npm uninstall -g hexo-cli
+$ sudo npm install -g hexo-cli
+``` 
+<!--more--> 
+### 使用hexo的时候总是遇到这样的错误：
 
 ``` 
 $ hexo --version
@@ -75,7 +82,6 @@ modules: 51
 openssl: 1.0.2j
 ``` 
 ### 解决办法如下：
-<!--more-->
 网上无数答案，最靠谱的办法：
 
 ``` 

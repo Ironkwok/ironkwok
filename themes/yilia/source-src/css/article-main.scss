@@ -93,6 +93,21 @@
   padding-left: 7.6923%;
 }
 
+.article-info.info-on-right{
+  margin: 10px 0 0 0;
+  float: right;
+}
+.article-info-index.article-info{
+  padding-top: 0;
+  margin: 0 $articlePadding 0 $articlePadding;
+  min-height: 30px;
+}
+.article-info-post.article-info{
+  padding: 0;
+  border: none;
+  margin: -30px 0 20px $articlePadding;
+}
+
 .article-meta{
   width: 150px;
   font-size: 14;
@@ -112,8 +127,8 @@
 }
 
 .article-more-link{
-  margin-top: 0;
-  text-align: left;
+  margin: 0;
+  text-align: center;
   a{
     background: #4d4d4d;
     color: #fff;
@@ -131,19 +146,4 @@
       visibility: hidden;
     }
   }
-}
-.article-info.info-on-right{
-	margin: 10px 0 0 0;
-	float: right;
-}
-.article-info-index.article-info{
-	padding-top: 20px;
-	margin: 30px $articlePadding 0 $articlePadding;
-  min-height: 72px;
-  border-top: 1px solid #ddd;
-}
-.article-info-post.article-info{
-	padding: 0;
-	border: none;
-	margin: -30px 0 20px $articlePadding;
 }

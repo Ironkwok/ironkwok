@@ -19,7 +19,6 @@
       <%- partial('post/category') %>
       <div class="clearfix"></div>
     </div>
-  </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
@@ -30,6 +29,7 @@
         <%- post.content %>
       <% } %>
     </div>
+  </div>
 </article>
 <% if (!index){ %>
   <%- partial('post/nav') %>

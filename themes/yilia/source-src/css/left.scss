@@ -31,15 +31,16 @@
 		overflow: hidden;
 		line-height: 15px;
 	}
+
 	.intrude-less {
 		width: 80%;
 		text-align: center;
-		margin: 150px auto 0;
+		margin: 180px auto 0;
 	}
 
 	#header{
 		width:100%;
-		height: 188px;
+		height: auto;
 		position: relative;
 		border-bottom: 1px solid color-border;
 		a {
@@ -48,66 +49,67 @@
 				color: #B0A0AA;
 			}
 		}
-	}
-	.profilepic{
-		text-align: center;
-		display: block;
-		border: 5px solid #fff;
-		border-radius: 300px;
-		width: 128px;
-		height: 128px;
-		margin: 30px 50px;
-		position: absolute;
-		overflow: hidden;
-		background: #88acdb;
-		-webkit-transition: all 0.2s ease-in;
-		display: -webkit-box;
-		-webkit-box-orient: horizontal;
-		-webkit-box-pack: center;
-		-webkit-box-align: center;
-		img{
-			border-radius: 300px;
-			opacity: 1;
+		.profilepic{
+			text-align: center;
+			display: block;
+			border: 0 solid #fff;
+			border-radius: 8px;
+			width: 128px;
+			height: 128px;
+			margin: 30px 50px;
+			position: relative;
+			overflow: hidden;
+			background: #88acdb;
 			-webkit-transition: all 0.2s ease-in;
-			&.show{
-				width: 100%;
-				height: 100%;
+			display: -webkit-box;
+			-webkit-box-orient: horizontal;
+			-webkit-box-pack: center;
+			-webkit-box-align: center;
+			text-align: center;
+			img{
+				border-radius: 8px;
 				opacity: 1;
+				-webkit-transition: all 0.2s ease-in;
+				&.show{
+					width: 100%;
+					height: 100%;
+					opacity: 1;
+				}
 			}
 		}
-	}
-	.menu{
-		font-weight: 300;
-		line-height: 31px;
-		cursor: pointer;
-		text-transform: uppercase;
-		float:none;
-		min-height: 50px;
-		margin-left: 0;
-		text-align: center;
-		display: -webkit-box;
-		-webkit-box-orient: horizontal;
-		-webkit-box-pack: center;
-		-webkit-box-align: center;
-		li{
-			cursor: default;
-			a{
-				font-size: 14px;
-				min-width: 300px;
+		.header-menu{
+			font-weight: 300;
+			line-height: 31px;
+			cursor: pointer;
+			text-transform: uppercase;
+			float:none;
+			min-height: 50px;
+			margin-left: 0;
+			text-align: center;
+			display: -webkit-box;
+			-webkit-box-orient: horizontal;
+			-webkit-box-pack: center;
+			-webkit-box-align: center;
+			li{
+				cursor: default;
+				a{
+					font-size: 14px;
+					min-width: 300px;
+				}
 			}
 		}
-	}
-	.smart-menu {
-		padding: 10px;
-		font-size: 12px;
-		margin: auto;
-		a {
-			&:after {
-				content: ' /'
-			}
-			&:last-child {
+		.header-smart-menu {
+			padding: 10px;
+			font-size: 12px;
+			margin-bottom: 20px;
+			a {
 				&:after {
-					content: ''
+					content: ' /'
+				}
+				&:last-child {
+					&:after {
+						content: ''
+					}
 				}
 			}
 		}

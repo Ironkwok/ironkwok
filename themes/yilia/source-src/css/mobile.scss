@@ -21,7 +21,7 @@ html, body, #container {
 .tools-col {
     display: none;
 }
-.header-author{
+.header-title{
     &.fixed{
         position: fixed;
         top: -13px;
@@ -29,7 +29,7 @@ html, body, #container {
         color: #ddd;
     }
 }
-#container .header-author.fixed {
+#container .header-title.fixed {
     position: fixed;
     top: -29px;
     width: 100%;

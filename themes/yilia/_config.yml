@@ -3,14 +3,16 @@
 menu:
   主页: /
   归档: /archives
+  #随笔: /tags/随笔
 
 # SubNav
 subnav:
   github: "https://github.com/xiniur"
   weibo: "http://weibo.com/1614763492"
   rss: /atom.xml
+  #zhihu: "#"
   #douban: "#"
-  #mail: 
+  #mail: "#"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -32,11 +34,11 @@ mathjax: false
 animate: true
 
 # 是否在新窗口打开链接
-open_in_new: true
+open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: 
+favicon: /uploads/avatar.png
 
 #你的头像url
 avatar: /uploads/avatar.png
@@ -55,11 +57,12 @@ duoshuo: "gohor"
 #  friends: false
 
 smart_menu:
-  innerArchive: '所有文章'
+  #innerArchive: '所有文章'
   tagcloud: '标签'
-  friends: false
+  #friends: '友链'
   aboutme: '关于我'
 
-friends:
+#friends:
+  #友情链接: http://localhost:4000/
 
 aboutme: 有始有卒者，其惟圣人乎！

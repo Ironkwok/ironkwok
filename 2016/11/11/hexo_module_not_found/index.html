@@ -5,22 +5,43 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="//xiniur.tk">
+  <link rel="dns-prefetch" href="http://xiniur.ga">
   <title>Cannot find module DTraceProviderBindings | Xiniur的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
-$ sudo npm install -g hexo-cli">
+$ sudo npm install -g hexo-cli
+
+解决办法如下：　　网上无数答案，最靠谱的办法：
+$ npm install hexo --no-optional
+
+　　然而，执行了之后没有效果，再找：
+$ npm uninstall hexo
+$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cannot find module DTraceProviderBindings">
-<meta property="og:url" content="//xiniur.tk/2016/11/11/hexo_module_not_found/index.html">
+<meta property="og:url" content="http://xiniur.ga/2016/11/11/hexo_module_not_found/index.html">
 <meta property="og:site_name" content="Xiniur的博客">
 <meta property="og:description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
-$ sudo npm install -g hexo-cli">
-<meta property="og:updated_time" content="2016-11-18T08:50:41.000Z">
+$ sudo npm install -g hexo-cli
+
+解决办法如下：　　网上无数答案，最靠谱的办法：
+$ npm install hexo --no-optional
+
+　　然而，执行了之后没有效果，再找：
+$ npm uninstall hexo
+$">
+<meta property="og:updated_time" content="2016-11-22T03:33:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cannot find module DTraceProviderBindings">
 <meta name="twitter:description" content="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：$ sudo npm uninstall -g hexo-cli
-$ sudo npm install -g hexo-cli">
+$ sudo npm install -g hexo-cli
+
+解决办法如下：　　网上无数答案，最靠谱的办法：
+$ npm install hexo --no-optional
+
+　　然而，执行了之后没有效果，再找：
+$ npm uninstall hexo
+$">
   
     <link rel="alternative" href="/atom.xml" title="Xiniur的博客" type="application/atom+xml">
   
@@ -167,104 +188,46 @@ $ sudo npm install -g hexo-cli">
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："><a href="#针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：" class="headerlink" title="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："></a>针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：</h3><pre><code>$ sudo npm uninstall -g hexo-cli
+        <h3 id="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："><a href="#针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：" class="headerlink" title="针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法："></a>针对这个错误网上解决办法贴的很多，却都没有解决我的问题，最终使用此办法：</h3><pre><code class="bash">$ sudo npm uninstall -g hexo-cli
 $ sudo npm install -g hexo-cli
-</code></pre><a id="more"></a> 
-<h3 id="使用hexo的时候总是遇到这样的错误："><a href="#使用hexo的时候总是遇到这样的错误：" class="headerlink" title="使用hexo的时候总是遇到这样的错误："></a>使用hexo的时候总是遇到这样的错误：</h3><pre><code>$ hexo --version
-{ Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
-{ Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
-{ Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;
-    at Function.Module._resolveFilename (module.js:472:15)
-    at Function.Module._load (module.js:420:25)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32)
-    at tryModuleLoad (module.js:449:12)
-    at Function.Module._load (module.js:441:3)
-    at Module.require (module.js:500:17)
-    at require (internal/module.js:20:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
-    at Module._compile (module.js:573:32)
-    at Object.Module._extensions..js (module.js:582:10)
-    at Module.load (module.js:490:32) code: &apos;MODULE_NOT_FOUND&apos; }
-hexo: 3.2.2
-hexo-cli: 1.0.2
-os: Darwin 16.1.0 darwin x64
-http_parser: 2.7.0
-node: 7.0.0
-v8: 5.4.500.36
-uv: 1.9.1
-zlib: 1.2.8
-ares: 1.10.1-DEV
-icu: 57.1
-modules: 51
-openssl: 1.0.2j
-</code></pre><h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><p>网上无数答案，最靠谱的办法：</p>
-<pre><code>$ npm install hexo --no-optional
-</code></pre><p>然而，执行了之后没有效果，再找：</p>
-<pre><code>$ npm uninstall hexo
+</code></pre>
+<h3 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h3><p>　　网上无数答案，最靠谱的办法：</p>
+<pre><code class="bash">$ npm install hexo --no-optional
+</code></pre>
+<p>　　然而，执行了之后没有效果，再找：</p>
+<pre><code class="bash">$ npm uninstall hexo
 $ npm install hexo --no-optional
-</code></pre><p>并没有什么用，坚持不放弃，重装hexo-cli：</p>
-<pre><code>$ npm uninstall -g hexo-cli
+</code></pre>
+<p>　　并没有什么用，坚持不放弃，重装hexo-cli：</p>
+<pre><code class="bash">$ npm uninstall -g hexo-cli
 $ npm install -g hexo-cli
-</code></pre><p>卸载时出现以下结果：</p>
-<pre><code>npm ERR! Darwin 16.1.0
-npm ERR! argv &quot;/usr/local/bin/node&quot; &quot;/usr/local/bin/npm&quot; &quot;uninstall&quot; &quot;-g&quot; &quot;hexo-cli&quot;
+</code></pre>
+<a id="more"></a> 
+<p>　　卸载时出现以下结果：</p>
+<pre><code class="bash">npm ERR! Darwin 16.1.0
+npm ERR! argv <span class="string">"/usr/local/bin/node"</span> <span class="string">"/usr/local/bin/npm"</span> <span class="string">"uninstall"</span> <span class="string">"-g"</span> <span class="string">"hexo-cli"</span>
 npm ERR! node v7.0.0
 npm ERR! npm  v3.10.8
-npm ERR! path /usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex
+npm ERR! path /usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/ansi-regex
 npm ERR! code EACCES
 npm ERR! errno -13
 npm ERR! syscall access
 
-npm ERR! Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos;
-npm ERR!  { Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos;
+npm ERR! Error: EACCES: permission denied, access <span class="string">'/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex'</span>
+npm ERR!  { Error: EACCES: permission denied, access <span class="string">'/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex'</span>
 npm ERR!   errno: -13,
-npm ERR!   code: &apos;EACCES&apos;,
-npm ERR!   syscall: &apos;access&apos;,
-npm ERR!   path: &apos;/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex&apos; }
+npm ERR!   code: <span class="string">'EACCES'</span>,
+npm ERR!   syscall: <span class="string">'access'</span>,
+npm ERR!   path: <span class="string">'/usr/local/lib/node_modules/hexo-cli/node_modules/ansi-regex'</span> }
 npm ERR! 
-npm ERR! Please try running this command again as root/Administrator.
-</code></pre><p>使用sudo，输入password，完美执行：</p>
-<pre><code>$ sudo npm uninstall -g hexo-cli
+npm ERR! Please try running this <span class="built_in">command</span> again as root/Administrator.
+</code></pre>
+<p>　　使用sudo，输入password，完美执行：</p>
+<pre><code class="bash">$ sudo npm uninstall -g hexo-cli
 $ sudo npm install -g hexo-cli
-</code></pre><p>一试之下，顿觉开朗，不再报错，完美解决问题：</p>
-<pre><code>$ hexo --version
+</code></pre>
+<p>　　一试之下，顿觉开朗，不再报错，完美解决问题：</p>
+<pre><code class="bash">$ hexo --version
 hexo: 3.2.2
 hexo-cli: 1.0.2
 os: Darwin 16.1.0 darwin x64
@@ -278,6 +241,72 @@ icu: 57.1
 modules: 51
 openssl: 1.0.2j
 </code></pre>
+<h3 id="错误说明："><a href="#错误说明：" class="headerlink" title="错误说明："></a>错误说明：</h3><pre><code class="bash">$ hexo --version
+{ Error: Cannot find module <span class="string">'./build/Release/DTraceProviderBindings'</span>
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: <span class="string">'MODULE_NOT_FOUND'</span> }
+{ Error: Cannot find module <span class="string">'./build/default/DTraceProviderBindings'</span>
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: <span class="string">'MODULE_NOT_FOUND'</span> }
+{ Error: Cannot find module <span class="string">'./build/Debug/DTraceProviderBindings'</span>
+    at Function.Module._resolveFilename (module.js:472:15)
+    at Function.Module._load (module.js:420:25)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/dtrace-provider/dtrace-provider.js:17:23)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32)
+    at tryModuleLoad (module.js:449:12)
+    at Function.Module._load (module.js:441:3)
+    at Module.require (module.js:500:17)
+    at require (internal/module.js:20:19)
+    at Object.&lt;anonymous&gt; (/usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/node_modules/bunyan/lib/bunyan.js:79:18)
+    at Module._compile (module.js:573:32)
+    at Object.Module._extensions..js (module.js:582:10)
+    at Module.load (module.js:490:32) code: <span class="string">'MODULE_NOT_FOUND'</span> }
+hexo: 3.2.2
+hexo-cli: 1.0.2
+os: Darwin 16.1.0 darwin x64
+http_parser: 2.7.0
+node: 7.0.0
+v8: 5.4.500.36
+uv: 1.9.1
+zlib: 1.2.8
+ares: 1.10.1-DEV
+icu: 57.1
+modules: 51
+openssl: 1.0.2j
+</code></pre>
+
       
     </div>
   </div>
@@ -286,9 +315,18 @@ openssl: 1.0.2j
   
 <nav id="article-nav">
   
+    <a href="/22016/11/11/谈一谈NS_ENUM&NS_OPTIONS/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          谈一谈NS_ENUM &amp; NS_OPTIONS
+        
+      </div>
+    </a>
   
-    <a href="/2016/11/11/11-11/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">11_11</div>
+  
+    <a href="/2016/10/18/Xcode8遇到的一些事/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Xcode8遇到的一些事</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +360,7 @@ openssl: 1.0.2j
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hexo_module_not_found" data-title="Cannot find module DTraceProviderBindings" data-url="//xiniur.tk/2016/11/11/hexo_module_not_found/"></div>
+	<div class="ds-thread" data-thread-key="hexo_module_not_found" data-title="Cannot find module DTraceProviderBindings" data-url="http://xiniur.ga/2016/11/11/hexo_module_not_found/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -391,7 +429,7 @@ openssl: 1.0.2j
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Objective-C/" style="font-size: 10px;">Objective-C</a> <a href="/tags/Xcode/" style="font-size: 10px;">Xcode</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a>
+    				<a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Objective-C/" style="font-size: 20px;">Objective-C</a> <a href="/tags/Xcode/" style="font-size: 10px;">Xcode</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/探究/" style="font-size: 10px;">探究</a>
     			</div>
     	</section>
     

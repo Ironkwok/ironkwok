@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiniur.ga/"/>
-  <updated>2016-11-22T04:49:20.000Z</updated>
+  <updated>2016-11-22T03:33:58.000Z</updated>
   <id>http://xiniur.ga/</id>
   
   <author>
@@ -14,104 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>谈一谈NS_ENUM &amp; NS_OPTIONS</title>
-    <link href="http://xiniur.ga/22016/11/11/%E8%B0%88%E4%B8%80%E8%B0%88NS_ENUM&amp;NS_OPTIONS/"/>
-    <id>http://xiniur.ga/22016/11/11/谈一谈NS_ENUM&amp;NS_OPTIONS/</id>
-    <published>+022016-11-11T08:33:08.000Z</published>
-    <updated>2016-11-22T04:49:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。</p>
-<pre><code class="objectivec"><span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-
-<span class="keyword">typedef</span> <span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-} MyEnum;
-
-<span class="keyword">typedef</span> <span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-<span class="keyword">typedef</span> <span class="built_in">NSInteger</span> MyEnum;
-</code></pre>
-<p>　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： </p>
-<blockquote>
-<p>enumdef - Enumerated Type Declaration </p>
-</blockquote>
-<a id="more"></a>
-<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="keyword">enum</span> : <span class="built_in">NSUInteger</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-} MyEnum;
-</code></pre>
-<blockquote>
-<p>nsenum - Enumerated Type Declaration (NS_ENUM)</p>
-</blockquote>
-<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSUInteger</span>, MyEnum) {
-    MyEnumValueA = <span class="number">0</span>,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-</code></pre>
-<p>　　这两种写法大致相同，都有两个参数，一个为值的类型，一个为枚举类型的名字，大括号里是要定义的枚举值，这种实现方法结合了之前版本的优点，写作也更加美观。<br>　　需要一提的是，还有另外一种枚举定义，NS_OPTIONS，使用位运算来赋值，其好处就是枚举值同时使用时仍具有唯一性，可使用或运算相加，位移不同位数得到的枚举值在二进制中代表不同的数位，不同的数位或运算的结果是唯一的。</p>
-<blockquote>
-<p>nsoptions - Enumerated Type Declaration (NS_OPTIONS) </p>
-</blockquote>
-<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="built_in">NS_OPTIONS</span>(<span class="built_in">NSUInteger</span>, MyEnum) {
-    MyEnumValueA = <span class="number">1</span> &lt;&lt; <span class="number">0</span>,
-    MyEnumValueB = <span class="number">1</span> &lt;&lt; <span class="number">1</span>,
-    MyEnumValueC = <span class="number">1</span> &lt;&lt; <span class="number">2</span>,
-};
-</code></pre>
-<p>　　可以在多条件下使用NS_OPTIONS，在结果唯一互斥的情况下使用NS_ENUM。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-
-&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-} MyEnum;
-
-&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;NSInteger&lt;/span&gt; MyEnum;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;enumdef - Enumerated Type Declaration &lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="http://xiniur.ga/tags/iOS/"/>
-    
-      <category term="Objective-C" scheme="http://xiniur.ga/tags/Objective-C/"/>
-    
-      <category term="探究" scheme="http://xiniur.ga/tags/%E6%8E%A2%E7%A9%B6/"/>
-    
-  </entry>
   
   <entry>
     <title>Cannot find module DTraceProviderBindings</title>
@@ -261,6 +163,104 @@ $ npm install -g hexo-cli
     
     
       <category term="hexo" scheme="http://xiniur.ga/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈一谈NS_ENUM &amp; NS_OPTIONS</title>
+    <link href="http://xiniur.ga/2016/11/11/%E8%B0%88%E4%B8%80%E8%B0%88NS_ENUM&amp;NS_OPTIONS/"/>
+    <id>http://xiniur.ga/2016/11/11/谈一谈NS_ENUM&amp;NS_OPTIONS/</id>
+    <published>2016-11-11T08:33:08.000Z</published>
+    <updated>2016-11-22T08:01:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。</p>
+<pre><code class="objectivec"><span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+
+<span class="keyword">typedef</span> <span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+} MyEnum;
+
+<span class="keyword">typedef</span> <span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+<span class="keyword">typedef</span> <span class="built_in">NSInteger</span> MyEnum;
+</code></pre>
+<p>　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： </p>
+<blockquote>
+<p>enumdef - Enumerated Type Declaration </p>
+</blockquote>
+<a id="more"></a>
+<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="keyword">enum</span> : <span class="built_in">NSUInteger</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+} MyEnum;
+</code></pre>
+<blockquote>
+<p>nsenum - Enumerated Type Declaration (NS_ENUM)</p>
+</blockquote>
+<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSUInteger</span>, MyEnum) {
+    MyEnumValueA = <span class="number">0</span>,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+</code></pre>
+<p>　　这两种写法大致相同，都有两个参数，一个为值的类型，一个为枚举类型的名字，大括号里是要定义的枚举值，这种实现方法结合了之前版本的优点，写作也更加美观。<br>　　需要一提的是，还有另外一种枚举定义，NS_OPTIONS，使用位运算来赋值，其好处就是枚举值同时使用时仍具有唯一性，可使用或运算相加，位移不同位数得到的枚举值在二进制中代表不同的数位，不同的数位或运算的结果是唯一的。</p>
+<blockquote>
+<p>nsoptions - Enumerated Type Declaration (NS_OPTIONS) </p>
+</blockquote>
+<pre><code class="objectivec"><span class="keyword">typedef</span> <span class="built_in">NS_OPTIONS</span>(<span class="built_in">NSUInteger</span>, MyEnum) {
+    MyEnumValueA = <span class="number">1</span> &lt;&lt; <span class="number">0</span>,
+    MyEnumValueB = <span class="number">1</span> &lt;&lt; <span class="number">1</span>,
+    MyEnumValueC = <span class="number">1</span> &lt;&lt; <span class="number">2</span>,
+};
+</code></pre>
+<p>　　可以在多条件下使用NS_OPTIONS，在结果唯一互斥的情况下使用NS_ENUM。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+
+&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+} MyEnum;
+
+&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;enum&lt;/span&gt; {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;NSInteger&lt;/span&gt; MyEnum;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;enumdef - Enumerated Type Declaration &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="http://xiniur.ga/tags/iOS/"/>
+    
+      <category term="Objective-C" scheme="http://xiniur.ga/tags/Objective-C/"/>
+    
+      <category term="探究" scheme="http://xiniur.ga/tags/%E6%8E%A2%E7%A9%B6/"/>
     
   </entry>
   

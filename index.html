@@ -132,81 +132,6 @@
       <div class="body-wrap">
         
   
-    <article id="post-谈一谈NS_ENUM&amp;NS_OPTIONS" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/22016/11/11/谈一谈NS_ENUM&NS_OPTIONS/">谈一谈NS_ENUM &amp; NS_OPTIONS</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-info article-info-index">
-      
-      <a href="/22016/11/11/谈一谈NS_ENUM&NS_OPTIONS/" class="archive-article-date">
-  	<time datetime="+022016-11-11T08:33:08.000Z" itemprop="datePublished"><i class="icon-clock"></i>22016-11-11</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Objective-C/">Objective-C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/探究/">探究</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。</p>
-<pre><code class="objectivec"><span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-
-<span class="keyword">typedef</span> <span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-} MyEnum;
-
-<span class="keyword">typedef</span> <span class="keyword">enum</span> {
-    MyEnumValueA,
-    MyEnumValueB,
-    MyEnumValueC,
-};
-<span class="keyword">typedef</span> <span class="built_in">NSInteger</span> MyEnum;
-</code></pre>
-<p>　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： </p>
-<blockquote>
-<p>enumdef - Enumerated Type Declaration </p>
-</blockquote>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/22016/11/11/谈一谈NS_ENUM&NS_OPTIONS/#more">more >></a>
-        </p>
-      
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
     <article id="post-hexo_module_not_found" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -256,6 +181,81 @@ $ npm install -g hexo-cli
 </code></pre>
         <p class="article-more-link">
           <a class="article-more-a"  href="/2016/11/11/hexo_module_not_found/#more">more >></a>
+        </p>
+      
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-谈一谈NS_ENUM&amp;NS_OPTIONS" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/11/谈一谈NS_ENUM&NS_OPTIONS/">谈一谈NS_ENUM &amp; NS_OPTIONS</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/11/谈一谈NS_ENUM&NS_OPTIONS/" class="archive-article-date">
+  	<time datetime="2016-11-11T08:33:08.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-11</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Objective-C/">Objective-C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/探究/">探究</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>　　enum枚举类型为预设值定义常量，没有被赋值的会自动从0开始赋予连续的值。有几种常用的枚举类型定义方式，每种方法大致相同，却也有细微的区别，现在就来探究一下究竟有何不一样。</p>
+<pre><code class="objectivec"><span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+
+<span class="keyword">typedef</span> <span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+} MyEnum;
+
+<span class="keyword">typedef</span> <span class="keyword">enum</span> {
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+<span class="keyword">typedef</span> <span class="built_in">NSInteger</span> MyEnum;
+</code></pre>
+<p>　　以上是之前的枚举类型，要么是定义了整型值，没有定义类型名，要么是没有定义类型名和enum什么关系，现在，枚举类型宏定义统一使用以下写法： </p>
+<blockquote>
+<p>enumdef - Enumerated Type Declaration </p>
+</blockquote>
+        <p class="article-more-link">
+          <a class="article-more-a"  href="/2016/11/11/谈一谈NS_ENUM&NS_OPTIONS/#more">more >></a>
         </p>
       
     </div>

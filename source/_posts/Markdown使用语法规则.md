@@ -3,6 +3,8 @@ title: Markdown使用规则
 date: 2016-07-19 17:34:14
 tags: 
 	- Markdown 
+	- 记录
+
 ---
 ### 说明
 　　是一种轻量级标记语言，它的目标是实现易读易写。
@@ -24,3 +26,14 @@ tags:
 　　支持的语言：actionscript, apache, bash, clojure, cmake, coffeescript, cpp, cs, css, d, delphi, django, erlang, go, haskell, html, http, ini, java, javascript, json, lisp, lua, markdown, matlab, nginx, objectivec, perl, php, python, r, ruby, scala, smalltalk, sql, tex, vbscript, xml等，可参考highlight.js `node_modules/highlight.js/lib`。
 　　也可以使用 4 空格缩进，再贴上代码，实现相同的的效果。
 ![代码块](/uploads/daimagaoliang2.png)
+### 表格
+　　使用| :------- | :-------: |生成表格，其中:是内容对其方式。
+
+``` 
+| student  | score     |
+| :------- | :-------: |
+| Bob      | 100       |
+``` 
+| student  | score     |
+| :------- | :-------: |
+| Bob   	 | 100       |

@@ -22,7 +22,7 @@ OBJC_EXPORT id objc_getAssociatedObject(id object, const void *key)
 // The main purpose of this function is to make it easy to return an object to a "pristine state”. You should not use this function for general removal of associations from objects, since it also removes associations that other clients may have added to the object. Typically you should use objc_setAssociatedObject(_:_:_:_:) with a nil value to clear an association.
 OBJC_EXPORT void objc_removeAssociatedObjects(id object)
     OBJC_AVAILABLE(10.6, 3.1, 9.0, 1.0);
-```
+``` 
 ### 参数解释
 object: 关联的源对象。
 key: 相当于NSDictionary的键，不同的是关联对象是通过判断两个key的地址是否相等而不是具体的值来比较。

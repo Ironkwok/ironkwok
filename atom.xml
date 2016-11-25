@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiniur.ga/"/>
-  <updated>2016-11-24T10:24:36.000Z</updated>
+  <updated>2016-11-25T06:59:24.000Z</updated>
   <id>http://xiniur.ga/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xiniur.ga/2016/11/24/iOS%E5%85%B3%E8%81%94%EF%BC%88Associative%20References%EF%BC%89/"/>
     <id>http://xiniur.ga/2016/11/24/iOS关联（Associative References）/</id>
     <published>2016-11-24T07:25:06.000Z</published>
-    <updated>2016-11-24T10:24:36.000Z</updated>
+    <updated>2016-11-25T06:59:24.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Objective-C-Runtime-Associative-References"><a href="#Objective-C-Runtime-Associative-References" class="headerlink" title="Objective-C Runtime(Associative References)"></a>Objective-C Runtime(Associative References)</h3><pre><code class="objectivec"><span class="comment">// Sets an associated value for a given object using a given key and association policy.</span>
 OBJC_EXPORT <span class="keyword">void</span> objc_setAssociatedObject(<span class="keyword">id</span> object, <span class="keyword">const</span> <span class="keyword">void</span> *key, <span class="keyword">id</span> value, objc_AssociationPolicy policy)
@@ -129,7 +129,7 @@ objc_setAssociatedObject(obj, &amp;key,value, OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     alertBlock(buttonIndex);
 }
 </code></pre>
-<p>###　断开关联<br>　　使用<code>objc_removeAssociatedObjects</code>可以断开所有的关联，使用这个函数会断开所有的关联，把对象恢复到“原始状态”。</p>
+<h3 id="断开关联"><a href="#断开关联" class="headerlink" title="断开关联"></a>断开关联</h3><p>　　使用<code>objc_removeAssociatedObjects</code>可以断开所有的关联，使用这个函数会断开所有的关联，把对象恢复到“原始状态”。</p>
 ]]></content>
     
     <summary type="html">

@@ -113,7 +113,7 @@ objc_setAssociatedObject(obj, &amp;key,value, OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     alertBlock(buttonIndex);
 }
 </code></pre>
-<p>###　断开关联<br>　　使用<code>objc_removeAssociatedObjects</code>可以断开所有的关联，使用这个函数会断开所有的关联，把对象恢复到“原始状态”。</p>
+<h3 id="断开关联"><a href="#断开关联" class="headerlink" title="断开关联"></a>断开关联</h3><p>　　使用<code>objc_removeAssociatedObjects</code>可以断开所有的关联，使用这个函数会断开所有的关联，把对象恢复到“原始状态”。</p>
 ]]></content>
     </entry>
     

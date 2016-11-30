@@ -109,5 +109,5 @@ static char alertViewKey;
     alertBlock(buttonIndex);
 }
 ``` 
-###　断开关联
+### 断开关联
 　　使用`objc_removeAssociatedObjects`可以断开所有的关联，使用这个函数会断开所有的关联，把对象恢复到“原始状态”。

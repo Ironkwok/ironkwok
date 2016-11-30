@@ -110,7 +110,7 @@ leancloud_visitors:
   app_key: fvickSfydbeFDg79mLEOiTYx
 
 #JiaThis
-#jiathis: true
+jiathis: true
 
 #百度统计
 baidu_analytics: 63b9f7b4c70cd387bcea296394d789fa

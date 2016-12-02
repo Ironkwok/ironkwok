@@ -40,17 +40,6 @@ open_in_new: false
 google_analytics: ''
 favicon: /uploads/avatar.png
 
-#你的头像url
-avatar: /uploads/avatar.png
-
-#是否开启分享
-share_jia: true
-share_addthis: false
-
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: "gohor"
-
 # 如不需要，将该项置为false
 # 比如
 #smart_menu:

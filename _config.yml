@@ -94,7 +94,7 @@ duoshuo_shortname: gohor
 duoshuo: "gohor"
 
 #多说分享
-duoshuo_share: false
+duoshuo_share: true
 
 # Tencent analytics ID
 tencent_analytics: 56051605
@@ -108,9 +108,6 @@ leancloud_visitors:
   enable: ture
   app_id: 62Axc60HxhcCtRjwOkL5CRqp-gzGzoHsz
   app_key: fvickSfydbeFDg79mLEOiTYx
-
-#JiaThis
-#jiathis: true
 
 #百度统计
 baidu_analytics: 63b9f7b4c70cd387bcea296394d789fa

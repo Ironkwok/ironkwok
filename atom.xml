@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xiniur的博客</title>
-  <subtitle>虽盘桓，志行正也</subtitle>
+  <title>Byeol.Kwok&#39;s Memo</title>
+  <subtitle>每天学习一点</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://xiniur.ga/"/>
+  <link href="http://byeol.ga/"/>
   <updated>2016-11-25T06:59:24.000Z</updated>
-  <id>http://xiniur.ga/</id>
+  <id>http://byeol.ga/</id>
   
   <author>
-    <name>Xiniur</name>
+    <name>Byeol.Kwok</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>iOS关联（Associative References）</title>
-    <link href="http://xiniur.ga/2016/11/24/iOS%E5%85%B3%E8%81%94%EF%BC%88Associative%20References%EF%BC%89/"/>
-    <id>http://xiniur.ga/2016/11/24/iOS关联（Associative References）/</id>
+    <link href="http://byeol.ga/2016/11/24/iOS%E5%85%B3%E8%81%94%EF%BC%88Associative%20References%EF%BC%89/"/>
+    <id>http://byeol.ga/2016/11/24/iOS关联（Associative References）/</id>
     <published>2016-11-24T07:25:06.000Z</published>
     <updated>2016-11-25T06:59:24.000Z</updated>
     
@@ -182,18 +182,18 @@ OBJC_EXPORT &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; objc_removeA
     </summary>
     
     
-      <category term="记录" scheme="http://xiniur.ga/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://byeol.ga/tags/%E8%AE%B0%E5%BD%95/"/>
     
-      <category term="iOS" scheme="http://xiniur.ga/tags/iOS/"/>
+      <category term="iOS" scheme="http://byeol.ga/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://xiniur.ga/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="http://byeol.ga/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>Cannot find module DTraceProviderBindings</title>
-    <link href="http://xiniur.ga/2016/11/11/hexo_module_not_found/"/>
-    <id>http://xiniur.ga/2016/11/11/hexo_module_not_found/</id>
+    <link href="http://byeol.ga/2016/11/11/hexo_module_not_found/"/>
+    <id>http://byeol.ga/2016/11/11/hexo_module_not_found/</id>
     <published>2016-11-11T08:42:49.000Z</published>
     <updated>2016-11-22T03:33:58.000Z</updated>
     
@@ -337,14 +337,14 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="hexo" scheme="http://xiniur.ga/tags/hexo/"/>
+      <category term="hexo" scheme="http://byeol.ga/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>谈一谈NS_ENUM &amp; NS_OPTIONS</title>
-    <link href="http://xiniur.ga/2016/11/11/%E8%B0%88%E4%B8%80%E8%B0%88NS_ENUM&amp;NS_OPTIONS/"/>
-    <id>http://xiniur.ga/2016/11/11/谈一谈NS_ENUM&amp;NS_OPTIONS/</id>
+    <link href="http://byeol.ga/2016/11/11/%E8%B0%88%E4%B8%80%E8%B0%88NS_ENUM&amp;NS_OPTIONS/"/>
+    <id>http://byeol.ga/2016/11/11/谈一谈NS_ENUM&amp;NS_OPTIONS/</id>
     <published>2016-11-11T08:33:08.000Z</published>
     <updated>2016-11-22T08:01:05.000Z</updated>
     
@@ -431,18 +431,18 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="iOS" scheme="http://xiniur.ga/tags/iOS/"/>
+      <category term="iOS" scheme="http://byeol.ga/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://xiniur.ga/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="http://byeol.ga/tags/Objective-C/"/>
     
-      <category term="探究" scheme="http://xiniur.ga/tags/%E6%8E%A2%E7%A9%B6/"/>
+      <category term="探究" scheme="http://byeol.ga/tags/%E6%8E%A2%E7%A9%B6/"/>
     
   </entry>
   
   <entry>
     <title>Xcode8遇到的一些事</title>
-    <link href="http://xiniur.ga/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
-    <id>http://xiniur.ga/2016/10/18/Xcode8遇到的一些事/</id>
+    <link href="http://byeol.ga/2016/10/18/Xcode8%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://byeol.ga/2016/10/18/Xcode8遇到的一些事/</id>
     <published>2016-10-18T02:10:10.000Z</published>
     <updated>2016-11-22T05:40:16.000Z</updated>
     
@@ -516,14 +516,14 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="Xcode" scheme="http://xiniur.ga/tags/Xcode/"/>
+      <category term="Xcode" scheme="http://byeol.ga/tags/Xcode/"/>
     
   </entry>
   
   <entry>
     <title>dynamic与synthesize区别</title>
-    <link href="http://xiniur.ga/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/"/>
-    <id>http://xiniur.ga/2016/07/24/dynamic与synthesize区别/</id>
+    <link href="http://byeol.ga/2016/07/24/dynamic%E4%B8%8Esynthesize%E5%8C%BA%E5%88%AB/"/>
+    <id>http://byeol.ga/2016/07/24/dynamic与synthesize区别/</id>
     <published>2016-07-24T11:15:14.000Z</published>
     <updated>2016-11-22T03:30:09.000Z</updated>
     
@@ -537,16 +537,16 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="iOS" scheme="http://xiniur.ga/tags/iOS/"/>
+      <category term="iOS" scheme="http://byeol.ga/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://xiniur.ga/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="http://byeol.ga/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>Markdown使用规则</title>
-    <link href="http://xiniur.ga/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/"/>
-    <id>http://xiniur.ga/2016/07/19/Markdown使用语法规则/</id>
+    <link href="http://byeol.ga/2016/07/19/Markdown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/"/>
+    <id>http://byeol.ga/2016/07/19/Markdown使用语法规则/</id>
     <published>2016-07-19T09:34:14.000Z</published>
     <updated>2016-11-25T01:45:12.000Z</updated>
     
@@ -588,16 +588,16 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="Markdown" scheme="http://xiniur.ga/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://byeol.ga/tags/Markdown/"/>
     
-      <category term="记录" scheme="http://xiniur.ga/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://byeol.ga/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>我的博客</title>
-    <link href="http://xiniur.ga/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://xiniur.ga/2016/05/10/我的博客/</id>
+    <link href="http://byeol.ga/2016/05/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://byeol.ga/2016/05/10/我的博客/</id>
     <published>2016-05-10T02:02:30.000Z</published>
     <updated>2016-11-22T03:29:57.000Z</updated>
     
@@ -612,7 +612,7 @@ $ npm install -g hexo-cli
     </summary>
     
     
-      <category term="hexo" scheme="http://xiniur.ga/tags/hexo/"/>
+      <category term="hexo" scheme="http://byeol.ga/tags/hexo/"/>
     
   </entry>
   

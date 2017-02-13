@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Byeol.Kwok&#39;s Memos</title>
-  <subtitle>每天学习一点</subtitle>
+  <subtitle>Learn a little every day</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://byeol.ga/"/>
